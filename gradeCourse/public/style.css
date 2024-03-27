@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   font-family: Roboto, Helvetica, sans-serif;
+   color: black;
+}
+
+body {
+   background-color: lightgray;
+}
+
+.container {
+   width: 1000px;
+   margin: 0 auto;
+}
+
+.warning article {
+   display: block;
+   line-height: 30px;
+   font-size: 18px;
+   text-align: center;
+   font-weight: 600;
+}
+
+.warning article.messageOk {
+   background-color: lightgreen;
+}
+
+.warning article.messageBad {
+   background-color: #f5427b;
+}
+
+body > .container > header {
+   background-color: #36bdf7;
+   padding: 20px 0;
+   text-align: center;
+}
+
+header h1 {
+   font-size: 30;
+   color: #fff;
+}
+
+nav {
+   width: 200px;
+   min-height: 800px;
+   float: left;
+   background-color: white;
+}
+
+nav ul {
+   list-style-type: none;
+   margin-top: 20px;
+}
+
+
+nav ul li a {
+   display: block;
+   text-decoration: none;
+   padding: 10px 20px;
+   width: 160px;
+}
+
+nav ul a:hover {
+   background-color: lightblue;
+}
+
+.show {
+   min-height: 800px;
+   width: 800px;
+   float: left;
+   position: relative;
+}
+
+table {
+   display: block;
+   margin-top: 30px;
+   margin-left: 50px;
+   margin-right: 50px;
+   border-spacing: 0;
+   border: 3px solid #36bdf7;
+}
+
+table td,th {
+   text-align: center;
+   width: 250px;
+   padding: 10px 0;
+   background-color: #fff;
+}
+
+th.smaller, td.smaller {
+   width: 160px;
+}
+
+th {
+   border-bottom: 2px solid #fff;
+   color: #fff;
+   text-transform: uppercase;
+   background-color: #36bdf7;
+}
+
+.gradeButton {
+   display: block;
+   box-sizing: border-box;
+   width: 150px;
+   height: 50px;
+   border: 2px solid #fff;
+   line-height: 49px;
+   text-align: center;
+   font-weight: 700;
+   background-color: #36bdf7;
+   text-transform: uppercase;
+   font-size: 14px;
+   color: #fff;
+   cursor: pointer;
+}
+
+.form ul li a {
+   display: block;
+   width: 150px;
+   height: 50px;
+}
+
+p a {
+   display: block;
+   text-decoration: none;
+   margin-top: 50px;
+   margin-left: 650px;
+   width: 149px;
+}
+
+.gradeButton:hover {
+   background-color: #42f5b6;
+}
+
+footer {
+   background-color: #36bdf7;
+   text-align: center;
+   padding: 20px 0;
+   clear: both;
+}
+
+footer h4 {
+   color: #fff;
+}
+
+.form {
+   background-color: #fff;
+   padding: 10px 0;
+   margin-left: 20px;
+   height: 370px;
+   margin-top: 50px;
+}
+
+.form ul {
+   list-style-type: none;
+   height: 300px;
+}
+
+.form ul li {
+   padding: 10px;
+}
+
+li span {
+   font-weight: 600;
+}
+
+li input, select {
+   width: 206px;
+}
+
+.form input[type=submit] {
+   cursor: pointer;
+}
+
+.form input[type=txt], input[type=number]  {
+   padding: 5px 10px;
+   display: block;
+   margin-top: 5px;
+   font-size: 16px;
+}
+
+.select {
+   display: block;
+   padding: 5px 10px;
+   font-size: 16px;
+   margin-top: 5px;
+}
+
+article.form header {
+   text-align: center;
+   line-height: 40px;
+   background-color: #36bdf7;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+article.form {
+   height: auto;
+   padding-top: 0;
+}
+
+.form a {
+   text-decoration: none;
+}
+
+.form ul li a {
+   float: left;
+}
+
+ul li a:nth-child(3) button {
+   background-color: #f5427b;
+}
+
+ul li a:nth-child(3) button:hover {
+   background-color: red;
+}
+
+form.delete input[type] {
+   background-color: #36bdf7;
+}
+
+form.delete input[type=submit] {
+   background-color: #f5427b;
+}
+
+form.delete input[type=submit]:hover {
+   background-color: red;
+}
+
+.move {
+   margin-bottom: 10px;
+   margin-left: 10px;
+   /* cursor: pointer; */
+} 
+
+.formWraper {
+   display: block;
+   padding: 10px;
+   background-color: #fff;
+   margin-left: 30px;
+   margin-top: 30px;
+   height: 90px;
+}
+
+.formWraper input[type=submit] {
+   margin: 0 auto;
+   float: left;
+   margin-top: 20px;
+   margin-left: 50px;
+}
+
+.formWraper .firstForm div, .secondForm div {
+   font-weight: 600;
+   margin-top: 5px;
+}
+
+.formWraper .firstForm {
+   float: left;
+   width: 230px;
+}
+
+.formWraper .secondForm {
+   float: right;
+   width: 230px;
+}
+ 
+.formWraper::after {
+   content: '';
+   display: block;
+   clear: both;
+} 
+
+.firstForm label, .secondForm label {
+   margin-left: 10px;
+   cursor: pointer;
+}
+.firstForm input, .secondForm input {
+   cursor: pointer;
+}
+
+.secondForm input {
+   margin-right: 5px;
+}
+
+.pagination {
+   margin: 20px 0 50px 0;
+   height: 30px;
+   text-align: center;
+}
+
+.pagination a {
+   text-decoration: none;
+}
+
+.pagination a button {
+   width: 30px;
+   height: 30px;
+   border: 2px solid #fff;
+   line-height: 30px;
+   text-align: center;
+   background-color: #36bdf7;
+   text-transform: uppercase;
+   font-size: 14px;
+   color: #fff;
+   cursor: pointer;
+   margin: 0 5px;
+}
+
+.searching label, .searching input {
+   cursor: auto;
+   margin: 0;
+}
+
+.searching {
+   margin-top: 10px;
+}
+
+.searching input {
+   padding: 5px;
+   width: 150px;
+}
+
+
+section.show p a > .gradeButton {
+   position: absolute;
+   bottom: 20px;
+}
+
+section.error {
+   padding-top: 20px;
+   text-align: center;
+}
+
+section.error h2 {
+   color: red;
+}
